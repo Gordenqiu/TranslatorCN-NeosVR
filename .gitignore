@@ -1,0 +1,12 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/translator/translator/translator.Application/bin/Debug/net6.0
+/translator/translator/translator.Core/bin/Debug/net6.0
+/translator/translator/translator.Database.Migrations/bin/Debug/net6.0
+/translator/translator/translator.EntityFramework.Core/bin/Debug/net6.0
+/translator/translator/translator.Web.Core/bin/Debug/net6.0
+/translator/translator/translator.Web.Core/obj/Debug/net6.0
+/translator/translator/translator.Web.Entry/bin/Debug/net6.0
+/translator/translator/translator.Web.Entry/obj/Debug/net6.0

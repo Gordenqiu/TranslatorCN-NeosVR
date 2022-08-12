@@ -1,0 +1,344 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Web.Core\\translator.Web.Core.csproj": {}
+  },
+  "projects": {
+    "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Application\\translator.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Application\\translator.Application.csproj",
+        "projectName": "translator.Application",
+        "projectPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Application\\translator.Application.csproj",
+        "packagesPath": "C:\\Users\\84345\\.nuget\\packages\\",
+        "outputPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\84345\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Core\\translator.Core.csproj": {
+                "projectPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Core\\translator.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "TencentCloudSDK": {
+              "target": "Package",
+              "version": "[3.0.577, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Core\\translator.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Core\\translator.Core.csproj",
+        "projectName": "translator.Core",
+        "projectPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Core\\translator.Core.csproj",
+        "packagesPath": "C:\\Users\\84345\\.nuget\\packages\\",
+        "outputPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\84345\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Furion": {
+              "target": "Package",
+              "version": "[3.0.6, )"
+            },
+            "Furion.Extras.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.0.6, )"
+            },
+            "Furion.Extras.ObjectMapper.Mapster": {
+              "target": "Package",
+              "version": "[3.0.6, )"
+            },
+            "TencentCloudSDK": {
+              "target": "Package",
+              "version": "[3.0.577, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Database.Migrations\\translator.Database.Migrations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Database.Migrations\\translator.Database.Migrations.csproj",
+        "projectName": "translator.Database.Migrations",
+        "projectPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Database.Migrations\\translator.Database.Migrations.csproj",
+        "packagesPath": "C:\\Users\\84345\\.nuget\\packages\\",
+        "outputPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Database.Migrations\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\84345\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.EntityFramework.Core\\translator.EntityFramework.Core.csproj": {
+                "projectPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.EntityFramework.Core\\translator.EntityFramework.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "TencentCloudSDK": {
+              "target": "Package",
+              "version": "[3.0.577, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.EntityFramework.Core\\translator.EntityFramework.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.EntityFramework.Core\\translator.EntityFramework.Core.csproj",
+        "projectName": "translator.EntityFramework.Core",
+        "projectPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.EntityFramework.Core\\translator.EntityFramework.Core.csproj",
+        "packagesPath": "C:\\Users\\84345\\.nuget\\packages\\",
+        "outputPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.EntityFramework.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\84345\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Core\\translator.Core.csproj": {
+                "projectPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Core\\translator.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "TencentCloudSDK": {
+              "target": "Package",
+              "version": "[3.0.577, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Web.Core\\translator.Web.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Web.Core\\translator.Web.Core.csproj",
+        "projectName": "translator.Web.Core",
+        "projectPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Web.Core\\translator.Web.Core.csproj",
+        "packagesPath": "C:\\Users\\84345\\.nuget\\packages\\",
+        "outputPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Web.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\84345\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Application\\translator.Application.csproj": {
+                "projectPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Application\\translator.Application.csproj"
+              },
+              "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Database.Migrations\\translator.Database.Migrations.csproj": {
+                "projectPath": "E:\\translatorCn\\TranslatorCN-NeosVR\\translator\\translator\\translator.Database.Migrations\\translator.Database.Migrations.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "TencentCloudSDK": {
+              "target": "Package",
+              "version": "[3.0.577, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

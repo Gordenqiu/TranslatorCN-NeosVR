@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>translator.Application</name>
+    </assembly>
+    <members>
+        <member name="T:translator.Application.System.Dtos.VoiceRequest">
+            <summary>
+            声音返回文字
+            </summary>
+        </member>
+        <member name="P:translator.Application.System.Dtos.VoiceRequest.name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:translator.Application.System.Dtos.VoiceRequest.val">
+            <summary>
+            textval
+            </summary>
+        </member>
+        <member name="T:translator.Application.SystemAppService">
+            <summary>
+            系统服务接口
+            </summary>
+        </member>
+        <member name="M:translator.Application.SystemAppService.GetDescription">
+            <summary>
+            获取系统描述
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:translator.Application.VoiceService">
+            <summary>
+            语音处理接口
+            </summary>
+        </member>
+        <member name="M:translator.Application.VoiceService.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:translator.Application.VoiceService.PostVoiceText(translator.Application.System.Dtos.VoiceRequest)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:translator.Application.VoiceService.GetTranslateWord(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取翻译后内容
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

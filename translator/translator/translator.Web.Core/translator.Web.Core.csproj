@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>translator.Web.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="translator.Web.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TencentCloudSDK" Version="3.0.577" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\translator.Application\translator.Application.csproj" />
+    <ProjectReference Include="..\translator.Database.Migrations\translator.Database.Migrations.csproj" />
+  </ItemGroup>
+
+</Project>

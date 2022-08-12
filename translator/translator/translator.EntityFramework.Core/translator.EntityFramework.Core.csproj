@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="sqlsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TencentCloudSDK" Version="3.0.577" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\translator.Core\translator.Core.csproj" />
+  </ItemGroup>
+
+</Project>

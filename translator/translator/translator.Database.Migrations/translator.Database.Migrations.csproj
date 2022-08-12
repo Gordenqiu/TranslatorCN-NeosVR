@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TencentCloudSDK" Version="3.0.577" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\translator.EntityFramework.Core\translator.EntityFramework.Core.csproj" />
+  </ItemGroup>
+
+</Project>

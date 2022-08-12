@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>translator.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="translator.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Furion" Version="3.0.6" />
+    <PackageReference Include="Furion.Extras.Authentication.JwtBearer" Version="3.0.6" />
+    <PackageReference Include="Furion.Extras.ObjectMapper.Mapster" Version="3.0.6" />
+    <PackageReference Include="TencentCloudSDK" Version="3.0.577" />
+  </ItemGroup>
+
+</Project>

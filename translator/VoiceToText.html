@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NeosVR Voice Input Helper</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Google Chromeでしか動作しません。</p>
+        <p>Only works with Google Chrome.</p>
+        <p>语音识别文字 只支持谷歌浏览器</p>
+        <form onsubmit="return false;">
+            <p>名前:Name:游戏内名字:<input type="text" id="name"></p>
+            <p>あなたの言語:Language:你的语言:<select id="langage" size="1" onchange="lngChange(this);">
+                <option value="ja-JP">日本語</option>
+                <option value="en-US">English</option>
+                <option value="de-DE">Deutsch</option>
+                <option value="zh-CN">中文</option>
+                <option value="ko-KR">한국</option>
+            </select></p>
+            <button onclick="recStart();" id="startButton">Start</button>
+        </form>
+        <p><div id="content" style="text-align: center;"></div></p>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+            speechRecognition = webkitSpeechRecognition || SpeechRecognition || mozSpeechRecognition;
+            const speech = new speechRecognition();
+
+            const content = document.getElementById('content');
+            const name = document.getElementById('name');
+            const language = document.getElementById('language');
+            const button = document.getElementById('startButton');
+
+            speech.lang = "ja-JP";
+
+            speech.onresult = function (e) {
+                speech.stop();
+                if (e.results[0].isFinal) {
+                    var autotext = e.results[0][0].transcript;
+                    content.innerHTML = '<div>' + autotext + '</div>';
+                    $.ajax({
+                        type: 'POST',
+                        dataType : "json",//后台返回值类型
+                        contentType: "application/json", //如果提交的是json数据类型，则必须有此参数,表示提交的数据类型 
+                        url: 'https://localhost:44342/api/voice/voice-text',
+                        data: JSON.stringify({
+                            name: name.value,
+                            val: autotext
+                        }),
+                        success: function(data) {
+                            console.log(data)
+                        }
+                    });
+                }
+            }
+
+            speech.onend = () =>
+            {
+                speech.start()
+            };
+
+            function recStart()
+            {
+                speech.start();
+                button.disabled = "disabled";
+            };
+
+            function lngChange(lng)
+            {
+                speech.lang = lng.options[lng.selectedIndex].value;
+            };
+
+        </script>
+    </body>
+</html>
