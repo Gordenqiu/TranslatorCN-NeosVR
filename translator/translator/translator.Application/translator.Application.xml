@@ -43,7 +43,13 @@
         </member>
         <member name="M:translator.Application.VoiceService.PostVoiceText(translator.Application.System.Dtos.VoiceRequest)">
             <summary>
-            
+            存入数据库
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:translator.Application.VoiceService.PostNeosReturn(System.String)">
+            <summary>
+            neos调用
             </summary>
             <returns></returns>
         </member>

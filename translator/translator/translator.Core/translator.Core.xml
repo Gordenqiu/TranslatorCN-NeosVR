@@ -4,5 +4,20 @@
         <name>translator.Core</name>
     </assembly>
     <members>
+        <member name="P:translator.Core.voiceText.Id">
+            <summary>
+            手工定义 Id
+            </summary>
+        </member>
+        <member name="P:translator.Core.voiceText.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:translator.Core.voiceText.Text">
+            <summary>
+            文本
+            </summary>
+        </member>
     </members>
 </doc>

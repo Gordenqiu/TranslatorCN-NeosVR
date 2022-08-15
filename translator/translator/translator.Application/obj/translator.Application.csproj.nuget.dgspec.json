@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EFCore.BulkExtensions": {
+              "target": "Package",
+              "version": "[6.5.6, )"
+            },
             "TencentCloudSDK": {
               "target": "Package",
               "version": "[3.0.577, )"

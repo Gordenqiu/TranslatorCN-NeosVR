@@ -1,14 +1,21 @@
-﻿using Furion.DynamicApiController;
+﻿using EFCore.BulkExtensions;
+using Furion;
+using Furion.DatabaseAccessor;
+using Furion.DynamicApiController;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Text;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using TencentCloud.Common;
 using TencentCloud.Common.Profile;
+using TencentCloud.Tci.V20190318.Models;
 using TencentCloud.Tmt;
 using TencentCloud.Tmt.V20180321;
 using TencentCloud.Tmt.V20180321.Models;
 using translator.Application.System.Dtos;
+using translator.Core;
 
 namespace translator.Application
 {
@@ -17,6 +24,11 @@ namespace translator.Application
     /// </summary>
     public class VoiceService : IDynamicApiController
     {
+        private readonly IRepository<voiceText> _voiceTextRepository;
+        public VoiceService(IRepository<voiceText> voiceTextRepository)
+        {
+            _voiceTextRepository = voiceTextRepository;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -27,14 +39,44 @@ namespace translator.Application
             return "hello";
         }
         /// <summary>
-        /// 
+        /// 存入数据库
         /// </summary>
         /// <returns></returns>
         public bool PostVoiceText(VoiceRequest request)
         {
-            var e = request;
+            var voice = new voiceText();
+            voice.Text = request.val;
+            voice.Name = request.name;
+            _voiceTextRepository.InsertNow(voice);
+
             return true;
         }
+        /// <summary>
+        /// neos调用
+        /// </summary>
+        /// <returns></returns>
+        [ProducesResponseType(201, Type = typeof(string))]
+        [ProducesResponseType(500, Type = typeof(string))]
+        public string PostNeosReturn(string Name)
+        {
+            try 
+            {
+                string voice = "";
+                var voices = _voiceTextRepository.Where(u => u.Name == Name).OrderByDescending(u => u.Id).ToList();
+                
+                if (voices.Count > 0)
+                {
+                    voice =  voices.FirstOrDefault().Text;
+                    _voiceTextRepository.Context.BulkDelete(voices);
+                }
+                return voice;  
+            }
+            catch
+            {
+                return "NeosReturnError";
+            } 
+        }
+
         /// <summary>
         /// 获取翻译后内容
         /// </summary>
@@ -44,16 +86,31 @@ namespace translator.Application
         {
             // 实例化一个认证对象，入参需要传入腾讯云账户secretId，secretKey,此处还需注意密钥对的保密
             // 密钥可前往https://console.cloud.tencent.com/cam/capi网站进行获取
+           
             var secert = key.Split(",");
             if (secert.Length != 2)
             {
                 return "密钥错误，翻译失败！";
             }
+            if (sourceText == "NeosReturnError" || string.IsNullOrEmpty(sourceText))
+            {
+                return string.Empty;
+            }
             Credential cred = new Credential
             {
-                SecretId = secert[0],
-                SecretKey = secert[1]
+                SecretId = "",
+                SecretKey = ""
             };
+            if (secert[0]=="test"&& secert[1] == "test")
+            {
+                cred.SecretId = App.Configuration["TXSecret:Id"];
+                cred.SecretKey = App.Configuration["TXSecret:Key"];
+            }
+            else
+            {
+                cred.SecretId = secert[0];
+                cred.SecretKey = secert[1];
+            }
             // 实例化一个client选项，可选的，没有特殊需求可以跳过
             ClientProfile clientProfile = new ClientProfile();
             // 实例化一个http选项，可选的，没有特殊需求可以跳过

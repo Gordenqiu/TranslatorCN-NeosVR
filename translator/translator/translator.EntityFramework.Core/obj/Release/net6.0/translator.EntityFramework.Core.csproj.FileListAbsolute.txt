@@ -1,0 +1,16 @@
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\bin\Release\net6.0\translator.EntityFramework.Core.deps.json
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\bin\Release\net6.0\translator.EntityFramework.Core.dll
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\bin\Release\net6.0\translator.EntityFramework.Core.pdb
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\bin\Release\net6.0\translator.Core.dll
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\bin\Release\net6.0\translator.Core.pdb
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\bin\Release\net6.0\translator.Core.xml
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\obj\Release\net6.0\translator.EntityFramework.Core.csproj.AssemblyReference.cache
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\obj\Release\net6.0\translator.EntityFramework.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\obj\Release\net6.0\translator.EntityFramework.Core.AssemblyInfoInputs.cache
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\obj\Release\net6.0\translator.EntityFramework.Core.AssemblyInfo.cs
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\obj\Release\net6.0\translator.EntityFramework.Core.csproj.CoreCompileInputs.cache
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\obj\Release\net6.0\translator.EntityFramework.Core.csproj.CopyComplete
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\obj\Release\net6.0\translator.EntityFramework.Core.dll
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\obj\Release\net6.0\refint\translator.EntityFramework.Core.dll
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\obj\Release\net6.0\translator.EntityFramework.Core.pdb
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.EntityFramework.Core\obj\Release\net6.0\ref\translator.EntityFramework.Core.dll

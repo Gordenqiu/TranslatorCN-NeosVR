@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="EFCore.BulkExtensions" Version="6.5.6" />
     <PackageReference Include="TencentCloudSDK" Version="3.0.577" />
   </ItemGroup>
 

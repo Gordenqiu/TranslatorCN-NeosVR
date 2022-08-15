@@ -10,3 +10,13 @@
 /translator/translator/translator.Web.Core/obj/Debug/net6.0
 /translator/translator/translator.Web.Entry/bin/Debug/net6.0
 /translator/translator/translator.Web.Entry/obj/Debug/net6.0
+/translator/translator/translator.Application/bin/Release/net6.0
+/translator/translator/translator.Core/bin/Release/net6.0
+/translator/translator/translator.Database.Migrations/bin/Release/net6.0
+/translator/translator/translator.Database.Migrations/obj/Release/net6.0
+/translator/translator/translator.Application/obj/Release/net6.0
+/translator/translator/translator.EntityFramework.Core/bin/Release/net6.0
+/translator/translator/translator.Web.Core/bin/Release/net6.0
+/translator/translator/translator.Web.Core/obj/Release/net6.0
+/translator/translator/translator.Web.Entry/bin/Release/net6.0
+/translator/translator/translator.Web.Entry/obj/Release/net6.0

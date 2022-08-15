@@ -1,4 +1,5 @@
 ﻿using Furion;
+using Furion.DatabaseAccessor;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace translator.EntityFramework.Core
@@ -9,8 +10,8 @@ namespace translator.EntityFramework.Core
         {
             services.AddDatabaseAccessor(options =>
             {
-                options.AddDbPool<DefaultDbContext>();
-            }, "translator.Database.Migrations");
+                options.AddDbPool<DefaultDbContext>(DbProvider.SqlServer, connectionMetadata: "Server=(local);Database=Translator;User=User;Password=Password;MultipleActiveResultSets=True;");
+            });
         }
     }
 }

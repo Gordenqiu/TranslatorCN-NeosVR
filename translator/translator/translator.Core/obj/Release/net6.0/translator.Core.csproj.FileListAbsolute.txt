@@ -1,0 +1,13 @@
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\bin\Release\net6.0\translator.Core.deps.json
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\bin\Release\net6.0\translator.Core.dll
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\bin\Release\net6.0\translator.Core.pdb
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\bin\Release\net6.0\translator.Core.xml
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\obj\Release\net6.0\translator.Core.csproj.AssemblyReference.cache
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\obj\Release\net6.0\translator.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\obj\Release\net6.0\translator.Core.AssemblyInfoInputs.cache
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\obj\Release\net6.0\translator.Core.AssemblyInfo.cs
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\obj\Release\net6.0\translator.Core.csproj.CoreCompileInputs.cache
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\obj\Release\net6.0\translator.Core.dll
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\obj\Release\net6.0\refint\translator.Core.dll
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\obj\Release\net6.0\translator.Core.pdb
+E:\translatorCn\TranslatorCN-NeosVR\translator\translator\translator.Core\obj\Release\net6.0\ref\translator.Core.dll
